@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    // Declare variables
+    int age = 20;
+    float height = 5.8;
+    char grade = 'A';
+    string fullName = "Sheila Knecht";
+
+    // Output initial values
+    cout << "Initial Values: " << endl;
+    cout << "Name: " << fullName << endl;
+    cout << "Age: " << age << endl;
+    cout << "Height: " << height << endl;
+    cout << "Grade: " << grade << endl;
+
+    // Modify and demonstrate implicit type conversion
+    height = age; // Implicit conversion from int to float
+
+    // Output modified values
+    cout << "\nAfter Implicit Conversion: " << endl;
+    cout << "Height (after assigning age): " << height << endl;
+
+    // Explicit type conversion
+    float ageInFloat = static_cast<float>(age);
+
+    // Output results of explicit casting
+    cout << "\nAfter Explicit Conversion: " << endl;
+    cout << "Age in float: " << ageInFloat << endl;
+
+    return 0;
+}
